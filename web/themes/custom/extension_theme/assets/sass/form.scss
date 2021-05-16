@@ -1,0 +1,23 @@
+
+form {
+  label {
+    font-size: .8rem;
+  }
+  .description {
+    font-size: 0.5rem;
+    color: $gray-600;
+  }
+
+  .form-item {
+    @extend .form-group;
+  }
+
+  .form-text, .form-email, .form-textarea {
+    @extend .form-control;
+  }
+
+  .button {
+    @extend .btn;
+    @extend .btn-primary;
+  }
+}

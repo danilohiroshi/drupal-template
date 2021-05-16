@@ -1,0 +1,52 @@
+version: '2'
+services:
+  app:
+    container_name: drupal-app
+    build:
+      context: ./
+      dockerfile: app.dockerfile
+    working_dir: /var/www
+    volumes:
+      - ../:/var/www
+    environment:
+      - "DB_PORT=3306"
+      - "DB_HOST=database"
+  web:
+    container_name: drupal-web
+    build:
+      context: ./
+      dockerfile: web.dockerfile
+    working_dir: /var/www/web
+    volumes_from:
+      - app
+    ports:
+      - 80:80
+  composer:
+    container_name: drupal-composer
+    working_dir: /var/www
+    image: composer
+    command: install --ignore-platform-reqs
+    volumes:
+      - ../:/var/www
+  mail:
+    image: mailhog/mailhog
+    container_name: drupal-mail
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+  database:
+    image: mysql:5.7.8
+    container_name: drupal-mysql
+    volumes:
+      - dbdata:/var/lib/mysql
+    expose:
+      - 3306
+    ports:
+      - "3306:3306"
+    environment:
+      - "MYSQL_DATABASE=drupal"
+      - "MYSQL_USER=root"
+      - "MYSQL_PASSWORD=root"
+      - "MYSQL_ROOT_PASSWORD=root"
+volumes:
+  dbdata:

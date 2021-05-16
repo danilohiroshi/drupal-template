@@ -1,0 +1,12 @@
+name: Drupal Extension
+type: module
+description: Customization module to extend Drupal.
+package: Custom
+core_version_requirement: ^9
+dependencies:
+  - drupal:views
+  - webform:webform
+  - pathauto:pathauto
+  - entity_reference_revisions
+  - field_group:field_group
+  - paragraphs:paragraphs

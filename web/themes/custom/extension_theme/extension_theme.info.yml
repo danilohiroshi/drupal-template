@@ -1,0 +1,17 @@
+name: Extension theme
+description: Extension theme
+type: theme
+core_version_requirement: ^9
+base theme: stable
+libraries:
+  - dh/global-css
+  - dh/global-js
+stylesheets-remove:
+  - core/themes/stable/css/views/views.module.css
+  - core/themes/stable/css/system/components/align.module.css
+regions:
+  content: 'Main Content'
+  breadcrumb: 'Breadcrumbs'
+  highlighted: 'Highlighted'
+  header: 'Header'
+  footer: 'Footer'

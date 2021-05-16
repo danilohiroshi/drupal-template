@@ -1,0 +1,7 @@
+docker/backups/drupal*
+web/files/
+web/sites/*/files
+web/sites/*/private
+web/themes/custom/*/node_modules
+vendor
+.vscode
