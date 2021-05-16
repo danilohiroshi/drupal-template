@@ -48,3 +48,34 @@ cd docker
 - Access the admin with the credentials:
   - username: admin
   - password: admin 
+
+# Debugging using vscode
+
+- If you are using vscode
+- To debug, add the following configuration in ".vscode/launch.json"
+
+```json
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Listen for XDebug",
+      "type": "php",
+      "request": "launch",
+      "port": 9003,
+      "pathMappings": {
+        "/var/www":"${workspaceFolder}"
+      },
+      "xdebugSettings": {
+          "max_data": 65535,
+          "show_hidden": 1,
+          "max_children": 100,
+          "max_depth": 5
+      }
+    }
+  ]
+}
+```
