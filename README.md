@@ -28,6 +28,16 @@ composer install
 
 # Start environment
 
+- Use this script to start the local environment
+
+```bash
+cd docker
+./start.sh
+```
+# Stop environment
+
+- Use this script to stop the local environment
+
 ```bash
 cd docker
 ./start.sh
