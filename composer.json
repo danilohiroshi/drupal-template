@@ -27,7 +27,7 @@
         "drupal/pathauto": "^1.8",
         "drupal/token": "^1.9",
         "drupal/webform": "^6.0",
-        "drush/drush": "^10.5"
+        "drush/drush": "8.x"
     },
     "conflict": {
         "drupal/drupal": "*"
