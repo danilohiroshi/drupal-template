@@ -779,6 +779,12 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+$settings['trusted_host_patterns'] = [
+  '^www\.drupal\.local\.com$',
+  '^www\.drupal\.local\.com\.br$',
+  '^drupal\.local\.com$',
+  '^drupal\.local\.com\.br$',
+];
 $databases['default']['default'] = array (
   'database' => 'drupal',
   'username' => 'root',
