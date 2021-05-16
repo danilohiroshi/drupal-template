@@ -41,3 +41,10 @@ cd docker
 
 # Access drupal local environment
 - http://drupal.local.com
+
+# Admin
+
+- If you are using the backup
+- Access the admin with the credentials:
+  - admin
+  - admin 
