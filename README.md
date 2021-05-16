@@ -1,11 +1,14 @@
 # Drupal template
 
-# Set up environment
+# Install Docker
 
 - Install Docker: http://docs.docker.com/engine/installation/
 - Install docker-compose: https://docs.docker.com/compose/install/
 - Configure NFS (Linux & Mac OS):
   - sudo apt-get install nfs-common
+
+# Install node, npm and yarn
+
 - Install node
   - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
   - export NVM_DIR="~/.nvm"
@@ -13,7 +16,6 @@
   - node --version
 - Install Yarn
   - npm -g i yarn
-
 
 # Composer
 
