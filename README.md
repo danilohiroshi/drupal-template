@@ -17,7 +17,7 @@
 - Install Yarn
   - npm -g i yarn
 
-# Composer
+# Install Composer
 
 - Install composer: https://getcomposer.org/download/
 - Setting the composer dependencies:
