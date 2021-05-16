@@ -46,5 +46,5 @@ cd docker
 
 - If you are using the backup
 - Access the admin with the credentials:
-  - admin
-  - admin 
+  - username: admin
+  - password: admin 
