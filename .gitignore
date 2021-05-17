@@ -2,6 +2,6 @@ docker/backups/drupal*
 web/files/
 web/sites/*/files
 web/sites/*/private
-web/sites/all/themes/custom/extension_theme/node_modules
+**/node_modules
 vendor
 .vscode
