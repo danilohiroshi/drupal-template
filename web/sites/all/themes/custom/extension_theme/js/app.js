@@ -36871,7 +36871,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 window._ = __webpack_require__(149);
 
 try {
-    window.$ = window.jQuery = __webpack_require__(5);
+    if (!window.jQuery) {
+        window.$ = window.jQuery = __webpack_require__(5);
+    }
 
     __webpack_require__(6);
 } catch (e) {}
