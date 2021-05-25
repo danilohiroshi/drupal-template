@@ -96,6 +96,7 @@
     },
     "require-dev": {
         "drupal/coder": "8.x",
+        "drupal/console": "^1.9",
         "drush/drush": "8.x",
         "mglaman/phpstan-drupal": "^0.12.10",
         "phpcompatibility/php-compatibility": "^9.3",
