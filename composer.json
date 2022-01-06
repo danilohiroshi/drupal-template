@@ -17,9 +17,9 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^3.0",
-        "drupal/core-composer-scaffold": "^9.3.2",
-        "drupal/core-project-message": "^9.3.2",
-        "drupal/core-recommended": "^9.3.2",
+        "drupal/core-composer-scaffold": "^9.2",
+        "drupal/core-project-message": "^9.2",
+        "drupal/core-recommended": "^9.2",
         "drupal/ctools": "^3.6",
         "drupal/entity_reference_revisions": "^1.9",
         "drupal/field_group": "^3.1",
