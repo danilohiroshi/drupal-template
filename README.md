@@ -52,6 +52,11 @@ cd docker
 # Access drupal local environment
 - http://drupal.local.com
 
+# Bash commands
+```bash
+docker exec -it drupal-app bash
+```
+
 # Admin
 
 - If you are using the backup
