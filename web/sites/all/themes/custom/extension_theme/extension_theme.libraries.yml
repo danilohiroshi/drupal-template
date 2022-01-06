@@ -1,7 +1,0 @@
-global-css:
-  css:
-    theme:
-      css/app.css: {}
-global-js:
-  js:
-    js/app.js: {}
