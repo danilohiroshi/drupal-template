@@ -1,0 +1,14 @@
+uuid: d6342a62-f1af-495b-ac1c-853c75d55cc2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - danilohiroshi@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''
