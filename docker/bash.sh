@@ -1,0 +1,1 @@
+docker exec -it drupal-app bash
